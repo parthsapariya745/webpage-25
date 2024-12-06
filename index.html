@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail Delievery Website Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- google fonts link -->
+
+  <!-- remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- remix icon cdn -->
+</head>
+<style>
+  *{
+    font-family: "Caudex", serif;                                                             
+  }
+  .main-right{
+    position: relative;
+  }
+  .main-right::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: inset 10px 200px 169px 200px rgba(42,54,107,0.6);
+    -moz-box-shadow: inset 10px 200px 169px 200px rgba(42,54,107,0.6);
+    box-shadow: inset 10px 200px 169px 200px rgba(42,54,107,0.6);
+  }
+</style>
+<body>
+  <div class="bg w-full h-auto">
+    <!-- hero & navbar -->
+    <div class="hero-img w-full h-auto bg-[url('./Assets/hero-img.jpg')] bg-cover bg-no-repeat object-cover bg-center bg-fixed">
+      <div class="navbar w-full h-[95px] bg-[#ffd034c9] flex justify-between sm:px-[50px] px-[20px]">
+        <div class="nav-logo h-full w-auto flex items-center">
+          <span class="text-[#002C5D] sm:text-[40px] text-[30px]">Apéritivo</span>
+        </div>
+        <div class="nav-menu h-full w-auto flex items-center gap-8">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" class="lg:hidden block" viewBox="0 0 50 50"><rect width="50" height="50" fill="none"/><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke="#262424" d="M6.25 25h37.5"/><path stroke="#013c82" d="M6.25 12.5h25m-12.5 25h25z"/></g></svg>
+          <a href="#" class="font-[Roboto] text-[#002c5d] duration-[400ms] lg:block hidden hover:duration-[400ms] hover:text-[#AD0000] font-medium">Our Cocktails</a>
+          <a href="#" class="font-[Roboto] text-[#002c5d] duration-[400ms] lg:block hidden hover:duration-[400ms] hover:text-[#AD0000] font-medium">Order Online</a>
+          <a href="#" class="font-[Roboto] text-[#002c5d] duration-[400ms] lg:block hidden hover:duration-[400ms] hover:text-[#AD0000] font-medium">About</a>
+          <a href="#" class="font-[Roboto] text-[#002c5d] duration-[400ms] lg:block hidden hover:duration-[400ms] hover:text-[#AD0000] font-medium">Contact</a>
+          <div class="login-item lg:flex items-center gap-4 cursor-pointer hidden">
+            <div class="user h-[28px] w-[28px] bg-[#002c5d] rounded-[50%] flex items-end justify-center text-[#FFCD31] text-[20px]">
+              <i class="ri-user-fill"></i>
+            </div>
+            <p class="text-[#002c5d] font-[Roboto] font-medium duration-[400ms] hover:text-[#365d8d] hover:duration-[400ms]">Log In</p>
+          </div>
+          <i class="ri-shopping-bag-line text-[#002c5d] text-[30px] lg:block hidden"></i>
+        </div>
+      </div>
+      <div class="hero-box sm:py-[120px] py-[50px] w-full h-auto lg:max-w-[1024px] lg:px-[38px] md:max-w-[768px] md:px-[30px] sm:max-w-[640px] sm:px-[30px] sm:relative mx-auto sm:block flex flex-col items-center">
+        <div class="hero-glass lg:h-[100vh] md:h-[90vh] lg:w-[535px] md:w-[450px] sm:h-[80vh] sm:w-[400px] h-[80vh] w-[70vw] bg-[url('./Assets/hero-glass.png')] bg-cover object-cover bg-no-repeat bg-center"></div>
+        <div class="hero-detail sm:w-[90%] flex items-center flex-col sm:items-end sm:absolute lg:bottom-[400px] md:bottom-[340px] sm:bottom-[310px]">
+          <h1 class="text-[#AD0000] lg:text-[130px] md:text-[90px] text-[60px]">Apéritivo</h1>
+          <p class="lg:text-[24px] md:text-[20px] text-[15px] text-[#002C5D] font-[Roboto] font-medium relative lg:bottom-[39px] md:bottom-[30px] sm:bottom-[20px]">Finest Cocktails. Delivered</p>
+          <button class="sm:h-[45px] sm:w-[155px] h-[40px] w-[135px] md:mt-6 mt-4 rounded-[25px] text-[#FFCD32] font-[Roboto] font-light bg-[#002C5D] border-[1px] border-[#002c5d] duration-[400ms] hover:bg-[#ffcd32] hover:duration-[400ms] hover:text-[#002C5D]">Order Online</button>
+        </div>
+      </div>
+    </div>
+    <!-- hero & navbar -->
+
+    <!-- main section -->
+    <div class="main-container w-full h-auto flex md:flex-row flex-col relative">
+      <div class="main-left h-full md:w-1/2 w-full">
+        <img src="./Assets/main-left.jpg" alt="">
+      </div>
+      <div class="main-right h-full md:w-1/2 w-full flex justify-center">
+        <img src="./Assets/main-right.jpg" alt="">
+        <div class="right-detail text-center absolute top-0 mt-[150px]">
+          <p class="lg:text-[24px] md:text-[20px] sm:text-[24px] font-semibold text-white font-[Roboto]">Time for Apéritivo</p>
+          <p class="lg:text-[30px] md:text-[22px] sm:text-[30px] font-semibold text-white pt-[20px]">Expertly crafted with premium <br> spirits and natural ingredients</p>
+        </div>
+      </div>
+    </div> 
+    <!-- main section -->
+
+    <!-- collection part -->
+    <div class="item-container w-full h-auto bg-[#FFCD32] py-[105px]">
+      <div class="item-part xl:max-w-[1420px] lg:max-w-[1024px] md:max-w-[768px] md:px-[30px] mx-auto sm:px-0 px-5">
+        <h2 class="lg:text-[24px] text-[22px] text-[#002C5D] font-[Roboto] font-[600] text-center">Cocktail Collections</h2>
+        <p class="lg:text-[30px] text-[25px] text-center pt-[35px] text-[#002C5D]">I'm a paragraph. Click here to add <br> your own text and edit me.</p>
+        <div class="item-box flex md:flex-row flex-col justify-between items-center xl:gap-0 md:gap-5 gap-8 lg:mt-[110px] mt-[50px]">
+          <div class="item-list text-center overflow-hidden">
+            <img src="./Assets/item3.jpg" class="rounded-[200px] duration-[500ms] md:hover:scale-[1.02] hover:duration-[500ms]" alt="">
+            <p class="xl:text-[50px] lg:text-[40px] text-[27px] text-[#AD0000] pt-8">Oldies Remix</p>
+            <button class="h-[43px] w-[190px] text-[#585e64] font-[Roboto] bg-transparent hover:bg-[#fae06f60] mt-3">See All</button>
+          </div>
+          <div class="item-list text-center overflow-hidden">
+            <img src="./Assets/item2.jpg" class="rounded-[200px] duration-[500ms] md:hover:scale-[1.02] hover:duration-[500ms]" alt="">
+            <p class="xl:text-[50px] lg:text-[40px] text-[27px] text-[#AD0000] pt-8">Bitter Galore<p>
+            <button class="h-[43px] w-[190px] text-[#585e64] font-[Roboto] bg-transparent hover:bg-[#fae06f60] mt-3">See All</button>
+          </div>
+          <div class="item-list text-center overflow-hidden">
+            <img src="./Assets/item1.jpg" class="rounded-[200px] duration-[500ms] md:hover:scale-[1.02] hover:duration-[500ms]" alt="">
+            <p class="xl:text-[50px] lg:text-[40px] text-[27px] text-[#AD0000] pt-8">Floral Fusion<p>
+            <button class="h-[43px] w-[190px] text-[#585e64] font-[Roboto] bg-transparent hover:bg-[#fae06f60] mt-3">See All</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- collection part -->
+
+    <!-- about section -->
+    <div class="about-container w-full h-auto bg-[#FFCD32] pt-[20px] pb-[115px]">
+      <div class="about-list w-full h-full flex flex-col items-center md:max-w-[768px] px-[18px] mx-auto">
+        <img src="./Assets/circle img.gif" class="w-[220px]" alt="">
+        <h2 class="text-[#002C5D] text-[24px] font-[500] font-[Roboto] pt-[20px]">Apéritivo with Friends</h2>
+        <p class="text-[#002C5D] text-[30px] text-center pt-[38px] leading-[47px]">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        <button class="h-[42px] w-[140px] mt-12 rounded-[25px] text-[#FFCD32] font-[Roboto] font-light bg-[#002C5D] border-[1px] border-[#002c5d] duration-[400ms] hover:bg-[#ffcd32] hover:duration-[400ms] hover:text-[#002C5D]">Read More</button>
+      </div>
+    </div> 
+    <!-- about section -->
+
+    <!-- img part-1 -->
+    <div class="img-box bg-[url('./Assets/bg-img1.jpg')] bg-cover bg-no-repeat w-full h-[110vh] bg-fixed"></div> 
+    <!-- img part-1 -->
+
+    <!-- step part -->
+    <div class="step-box w-full h-auto bg-[#FFCD32] pt-[90px]">
+      <div class="step-part xl:max-w-[1400px] lg:max-w-[1024px] md:max-w-[768px] px-[30px] mx-auto">
+        <h2 class="text-[#002C5D] font-[Roboto] text-[24px] font-[500] text-center">It's Cocktail O'clock</h2>
+        <div class="step-list md:py-[120px] py-[50px] flex md:flex-nowrap flex-wrap md:justify-between justify-center xl:gap-40 lg:gap-8 md:gap-5 gap-10">
+          <div class="step-item h-full w-auto flex flex-col items-center">
+            <img src="./Assets/img1.png" class="w-[150px]" alt="">
+            <h3 class="text-[#002C5D] lg:text-[24px] text-[20px] font-[500] font-[Roboto] pt-[30px]">Choose Your Mix</h3>
+            <p class="text-[#002C5D] lg:text-[30px] text-[24px] text-center pt-[8px] leading-[47px]">I'm a paragraph. Click here to add your own text and edit me.  </p>
+          </div>
+          <div class="step-item h-full w-auto flex flex-col items-center">
+            <img src="./Assets/img2.png" class="w-[150px]" alt="">
+            <h3 class="text-[#002C5D] lg:text-[24px] text-[20px] font-[500] font-[Roboto] pt-[30px]">Place Your Order</h3>
+            <p class="text-[#002C5D] lg:text-[30px] text-[24px] text-center pt-[8px] leading-[47px]">I'm a paragraph. Click here to add your own text and edit me.  </p>
+          </div>
+          <div class="step-item h-full w-auto flex flex-col items-center">
+            <img src="./Assets/img3.png" class="w-[150px]" alt="">
+            <h3 class="text-[#002C5D] lg:text-[24px] text-[20px] font-[500] font-[Roboto] pt-[30px]">Add the Ice</h3>
+            <p class="text-[#002C5D] lg:text-[30px] text-[24px] text-center pt-[8px] leading-[47px]">I'm a paragraph. Click here to add your own text and edit me.  </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- step part -->
+
+    <!-- img part-2 -->
+    <div class="img-box bg-[url('./Assets/bg-img2.jpg')] bg-cover bg-no-repeat w-full h-[110vh] bg-fixed"></div> 
+    <!-- img part-2 -->
+
+    <!-- footer -->
+    <div class="footer w-full h-auto bg-[#002C5D]">
+      <div class="footer-list w-full h-full py-[120px] flex justify-between xl:max-w-[1280px] xl:px-[40px] lg:max-w-[1024px] md:max-w-[768px] md:flex-nowrap md:px-[30px] md:gap-0 sm:max-w-[640px] sm:px-[50px] px-[30px] gap-10 flex-wrap mx-auto">
+        <div class="footer-item text-[#FFCD32] flex flex-col items-center">
+          <p class="text-[30px]">Contact</p>
+          <a href="#" class="font-[Roboto] font-light text-[15px] pt-[12px]">info@mysite.com</a>
+          <p class="font-[Roboto] font-light pt-[5px] text-[15px]">123-456-7890</p>
+          <p class="font-[Roboto] font-light pt-[40px] text-[15px]">500 Terry Francine Street</p>
+          <p class="font-[Roboto] font-light pt-[5px] text-[15px]">San Francisco, CA 94158</p>
+        </div>
+        <div class="footer-item text-[#FFCD32] flex flex-col items-center justify-center">
+          <p class="lg:text-[72px] text-[50px]">Apéritivo</p>
+          <p class="font-light pt-[5px]"><span class="font-[Roboto] cursor-pointer">Facebook</span> • <span class="font-[Roboto] cursor-pointer">Twitter</span> • <span class="font-[Roboto] cursor-pointer">Instagram</span></p>
+        </div>
+        <div class="footer-item text-[#FFCD32] flex flex-col items-center">
+          <p class="text-[30px]">Service</p>
+          <p class="font-[Roboto] font-light pt-[12px] text-[15px]">Same-Day delivery</p>
+          <p class="font-[Roboto] font-light pt-[5px] text-[15px]">All over San Francisco</p>
+          <p class="font-[Roboto] font-light pt-[40px] text-[15px]">Mon - Fri: 11am - 10pm</p>
+          <p class="font-[Roboto] font-light pt-[5px] text-[15px]">Sat - Sun: 11am - 12am</p>
+        </div>
+      </div>
+      <div class="footer-bottom pb-[15px] sm:px-0 px-[30px]">
+        <p class="text-center text-[#FFCD32] text-[15px] font-[Roboto] font-light">©2035 by Apéritivo. Powered and secured by <u class="font-[Roboto] font-light">Wix</u></p>
+      </div>
+    </div>
+    <!-- footer -->
+  </div>
+</body>
+</html>
